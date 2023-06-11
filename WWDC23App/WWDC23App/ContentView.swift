@@ -13,12 +13,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Image("wwdc23apple")
+                .resizable()
+                .frame(width: 300, height: 300)
+                .cornerRadius(50)
+               Text("__Bookmarks__ are really __cool__!")
+                .font(.largeTitle)
         }
+        .preferredColorScheme(.dark)
         .padding()
     }
 }
